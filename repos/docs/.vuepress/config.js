@@ -19,7 +19,16 @@ module.exports = (options) => ({
     sidebarDepth: 3,
     searchMaxSuggestions: 10,
     nav: [
-
+      {
+        text: 'Languages',
+        items: [
+          { text: 'cpp', link: '/languages/cpp/'},
+          { text: 'java', link: '/languages/java/'},
+          { text: 'nodejs', link: '/languages/nodejs/'},
+          { text: 'python', link: '/languages/python/'},
+          { text: 'shell', link: '/languages/shell/'},
+        ]
+      }
     ],
   },
   plugins: ['beautiful-bar', 'medium-zoom'],
