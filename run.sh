@@ -51,8 +51,9 @@ deploy(){
             fi
         ;;
         deploy)
-            npx gh-pages -d ${dist_path} -r ${github_repo}
             npx gh-pages -d ${dist_path} -r ${gitee_repo}
+            npx gh-pages -d ${dist_path} -r ${github_repo}
+            python auto-pages.py ${docs_abs_path}
         ;;
         bd)
             ./run.sh build ${docs_name}
