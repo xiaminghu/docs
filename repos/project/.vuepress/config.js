@@ -28,6 +28,15 @@ module.exports = (options) => ({
           },
         ],
       },
+      {
+        text: 'Python',
+        items: [
+          {
+            text: 'auto-pages',
+            link: '/python/auto-pages/'
+          }
+        ]
+      }
     ],
   },
   plugins: ['beautiful-bar', 'medium-zoom'],
