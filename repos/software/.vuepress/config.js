@@ -18,6 +18,13 @@ module.exports = (options) => ({
         items: [
           { text: 'nodejs', link: '/languages/nodejs/'},
         ]
+      },
+      {
+        text: 'Programming',
+        items: [
+          { text: 'shell', link: '/programming/shell/'},
+          { text: 'vcs', link: '/programming/vcs/'},
+        ]
       }
     ],
   },

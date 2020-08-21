@@ -56,4 +56,10 @@ wget https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh
 + REMOTE=${REMOTE:-https://gitee.com/mirrors/oh-my-zsh.git}
 # 然后执行
 chmod -x install.sh && ./install.sh
+
+# 代码执行
+wget https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh && \
+sed -i 's,github.com/${REPO},gitee.com/mirrors/oh-my-zsh,' install.sh && \
+chmod -x install.sh && ./install.sh && \
+rm install.sh
 ```
