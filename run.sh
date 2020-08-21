@@ -4,6 +4,7 @@ project_name="${project_path##*/}" # 文件夹名称
 
 action=$1
 docs_name=$2
+username=xiaminghu
 repos_dir=repos # project_dir/repos
 abs_repos_dir=${project_path}/${repos_dir}
 rel_dist_dir='.vuepress/dist' # config.js -> dest
@@ -21,8 +22,8 @@ deploy(){
     docs_abs_path=${abs_repos_dir}/${name}
     dist_path=${abs_repos_dir}/${name}/${rel_dist_dir}
     # git 仓库
-    github_repo=https://github.com/xiaminghu/${name}.git
-    gitee_repo=https://gitee.com/xiaminghu/${name}.git
+    github_repo=https://github.com/${username}/${name}.git
+    gitee_repo=https://gitee.com/${username}/${name}.git
     # echo ${dist_path}
     # echo ${github_repo}
     # echo ${gitee_repo}
