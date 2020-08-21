@@ -13,7 +13,12 @@ module.exports = (options) => ({
     sidebarDepth: 3,
     searchMaxSuggestions: 10,
     nav: [
-
+      {
+        text: 'Languages',
+        items: [
+          { text: 'nodejs', link: '/languages/nodejs/'},
+        ]
+      }
     ],
   },
   plugins: ['beautiful-bar', 'medium-zoom'],
