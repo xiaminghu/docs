@@ -14,3 +14,7 @@
 # build and deploy
 ./run.sh bd docs
 ```
+
+## style
+
+- 所有标题均使用英文，提高链接的可读性
