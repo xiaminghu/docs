@@ -1,5 +1,7 @@
 # zsh
 
+[zsh 启动慢的问题](https://zhuanlan.zhihu.com/p/68303393)
+
 ## 简介
 
 **Recommended Readings**
