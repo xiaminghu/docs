@@ -22,14 +22,22 @@ module.exports = (options) => ({
       {
         text: 'Languages',
         items: [
-          { text: 'cpp', link: '/languages/cpp/'},
-          { text: 'java', link: '/languages/java/'},
-          { text: 'nodejs', link: '/languages/nodejs/'},
-          { text: 'python', link: '/languages/python/'},
-          { text: 'shell', link: '/languages/shell/'},
-        ]
-      }
+          { text: 'cpp', link: '/languages/cpp/' },
+          { text: 'java', link: '/languages/java/' },
+          { text: 'nodejs', link: '/languages/nodejs/' },
+          { text: 'python', link: '/languages/python/' },
+          { text: 'shell', link: '/languages/shell/' },
+        ],
+      },
     ],
   },
-  plugins: ['beautiful-bar', 'medium-zoom'],
+  plugins: [
+    'beautiful-bar',
+    'medium-zoom',
+    [
+      // 代码复制
+      'code-copy',
+      { align: 'top' }
+    ],
+  ],
 })

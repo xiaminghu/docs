@@ -8,13 +8,7 @@ module.exports = (options) => ({
   description: '这里记录了我所有的开源项目的文档说明',
   evergreen: true,
   head: [],
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@software': path.join(options.sourceDir, 'software'),
-      },
-    },
-  },
+  configureWebpack: {},
   themeConfig: {
     sidebarDepth: 3,
     searchMaxSuggestions: 10,
@@ -33,11 +27,19 @@ module.exports = (options) => ({
         items: [
           {
             text: 'auto-pages',
-            link: '/python/auto-pages/'
-          }
-        ]
-      }
+            link: '/python/auto-pages/',
+          },
+        ],
+      },
     ],
   },
-  plugins: ['beautiful-bar', 'medium-zoom'],
+  plugins: [
+    'beautiful-bar',
+    'medium-zoom',
+    [
+      // 代码复制
+      'code-copy',
+      { align: 'top' },
+    ],
+  ],
 })

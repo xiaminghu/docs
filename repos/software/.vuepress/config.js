@@ -14,19 +14,24 @@ module.exports = (options) => ({
     searchMaxSuggestions: 10,
     nav: [
       {
-        text: 'Languages',
-        items: [
-          { text: 'nodejs', link: '/languages/nodejs/'},
-        ]
-      },
-      {
         text: 'Programming',
         items: [
-          { text: 'shell', link: '/programming/shell/'},
-          { text: 'vcs', link: '/programming/vcs/'},
-        ]
-      }
+          { text: 'Shell', link: '/programming/shell/' },
+          { text: 'VCS', link: '/programming/vcs/' },
+          { text: 'IDE', link: '/programming/ide/' },
+          { text: 'Languages', link: '/programming/languages/' },
+          { text: 'Others', link: '/programming/others/' },
+        ],
+      },
     ],
   },
-  plugins: ['beautiful-bar', 'medium-zoom'],
+  plugins: [
+    'beautiful-bar',
+    'medium-zoom',
+    [
+      // 代码复制
+      'code-copy',
+      { align: 'top' },
+    ],
+  ],
 })
